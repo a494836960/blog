@@ -16,8 +16,19 @@ import Header from "@/components/header/index.vue";
     Header
   }
 })
-
 export default class Home extends Vue {
   @Provide() obj: Object = {};
 }
 </script>
+
+<style lang="less" scoped>
+.hd-content {
+  width: @container-width;
+  margin: 20px auto 0;
+  min-height: 90vh;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25)
+}
+</style>
