@@ -7,6 +7,7 @@ import elementUI from 'element-ui'
 import '@/assets/element/index.css'
 import '@/assets/less/reset.less'
 import '@/assets/less/base.less'
+import './mock/index.js'
 
 Vue.use(elementUI)
 Vue.config.productionTip = false

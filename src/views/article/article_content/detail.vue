@@ -21,13 +21,8 @@ export default class ArticleDetail extends Vue {
 
   getArticleDetail() {
     fetchArticleDetail({ id: this.id }).then(res => {
-      this.article = {
-        title: "title",
-        content: "content",
-        next: "",
-        prev: "",
-        id: ""
-      };
+      console.log(res);
+      this.article = res.data;
     });
   }
 }

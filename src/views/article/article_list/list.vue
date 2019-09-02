@@ -23,14 +23,7 @@ export default class ArticleList extends Vue {
 
   getArticleList() {
     fetchArticleList({}).then(res => {
-      this.list = res.data.record || [
-        {
-          id: 1,
-          title: "vue-property-decorator使用指南 - 掘金",
-          desc:
-            "在Vue中使用TypeScript时,非常好用的一个库,使用装饰器来简化书写。 1、安装npm install --save vue-property-decorator @Component (from vue-class-component) ..."
-        }
-      ];
+      this.list = res.data.records;
     });
   }
 }
